@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# get admin privileges
+sudo su
+
+# check Internet connectivity
+until ping -q -c 1 -W 1 8.8.8.8 >/dev/null; do
+  echo "checking for Internet connectivity"
+  sleep 1
+done
+echo "Internet connectivity established"
+sleep 10
+
+# install httpd (Linux 2023 version)
+sudo dnf update -y
+sudo dnf install -y httpd
+
+systemctl start httpd.service
+systemctl enable httpd.service
+echo '<font face="verdana,arial,sans-serif"><h1>Hello from the serverless cloud CA team!</h1></font>' > /var/www/html/index.html
