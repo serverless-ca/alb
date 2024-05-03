@@ -1,7 +1,17 @@
 # alb
 AWS Application Load Balancer for testing mTLS with open-source cloud Certificate Authority
 
-* deploys AWS Application Load Balancer and EC2 instances using Terraform
+> 📖 use in conjunction with blog post [Application Load Balancer mTLS with open-source cloud CA](https://medium.com)
+
+![Alt text](images/alb-mtls.png?raw=true "Application Load Balancer mTLS")
+
+* deploys resources using Terraform:
+    * VPC
+    * 2 x EC2 in auto-scaling group
+    * 2 x NAT Gateways
+    * Application Load Balancer
+    * Certificate for ALB in AWS Certificate Manager
+    * Route53 record
 * configure mTLS manually using the console as detailed in the [blog](https://medium.com)
 
 ## warning
@@ -27,4 +37,10 @@ terraform apply
 Alternatively use `backend.tf` as is, and initialise with:
 ```
 terraform init -backend-config=bucket={YOUR_TERRAFORM_STATE_BUCKET} -backend-config=key="alb/terraform.state" -backend-config=region={YOUR_TERRAFORM_STATE_REGION}
+```
+
+## Destroy environment
+* to avoid large bills, when you've finished testing, ensure you delete everything:
+```
+terraform destroy
 ```
