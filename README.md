@@ -1,9 +1,11 @@
 # alb
 AWS Application Load Balancer for testing mTLS with open-source cloud Certificate Authority
 
+![Alt text](images/alb-mtls.png?raw=true "Application Load Balancer mTLS")
+
 > 📖 use in conjunction with blog post [Application Load Balancer mTLS with open-source cloud CA](https://medium.com)
 
-![Alt text](images/alb-mtls.png?raw=true "Application Load Balancer mTLS")
+![Alt text](images/alb-resources.png?raw=true "Application Load Balancer resources")
 
 * deploys resources using Terraform:
     * VPC
