@@ -3,7 +3,7 @@ AWS Application Load Balancer for testing mTLS with open-source cloud Certificat
 
 ![Alt text](images/alb-mtls.png?raw=true "Application Load Balancer mTLS")
 
-> 📖 use in conjunction with blog post [Application Load Balancer mTLS with open-source cloud CA](https://medium.com)
+> 📖 use in conjunction with blog post [Application Load Balancer mTLS with open-source cloud CA](https://medium.com/@paulschwarzenberger/aws-application-load-balancer-mtls-with-open-source-cloud-ca-277cb40d60c7)
 
 ![Alt text](images/alb-resources.png?raw=true "Application Load Balancer resources")
 
@@ -14,7 +14,7 @@ AWS Application Load Balancer for testing mTLS with open-source cloud Certificat
     * Application Load Balancer
     * Certificate for ALB in AWS Certificate Manager
     * Route53 record
-* configure mTLS manually using the console as detailed in the [blog](https://medium.com)
+* configure mTLS manually using the console as detailed in the [blog](https://medium.com/@paulschwarzenberger/aws-application-load-balancer-mtls-with-open-source-cloud-ca-277cb40d60c7)
 
 ## warning
 This infrastructure is expensive to run - destroy immediately after use!
