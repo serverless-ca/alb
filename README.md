@@ -16,10 +16,10 @@ AWS Application Load Balancer for testing mTLS with open-source cloud Certificat
     * Route53 record
 * configure mTLS manually using the console as detailed in the [blog](https://medium.com/@paulschwarzenberger/aws-application-load-balancer-mtls-with-open-source-cloud-ca-277cb40d60c7)
 
-## warning
+## Warning
 This infrastructure is expensive to run - destroy immediately after use!
 
-## requirements
+## Requirements
 You'll need to already have in your AWS account:
 * Route53 public hosted zone
 * S3 bucket for Terraform state
